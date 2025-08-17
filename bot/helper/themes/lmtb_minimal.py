@@ -3,7 +3,7 @@ class LMTBStyle:
     # ----------------------
     # async def start(client, message) ---> __main__.py
     ST_BN1_NAME = 'Repo'
-    ST_BN1_URL = 'https://t.me/Alphaleech'
+    ST_BN1_URL = 'https://t.me/EliteLeechZone'
     ST_BN2_NAME = 'Updates'
     ST_BN2_URL = 'https://t.me/HeartxBots'
     ST_MSG = '''<i>This bot can mirror all your links|files|torrents to Google Drive or any rclone cloud or to telegram or to ddl servers.</i>
@@ -193,11 +193,11 @@ class LMTBStyle:
     # def get_readable_message(): ---> bot_utilis.py
     ####--------OVERALL MSG HEADER----------
     STATUS_NAME =    '<code>{Name}</code>'
+
+    #####---------PROGRESSIVE STATUS-------
     STATUS =         '\n<b>┌ <i><a href="{Url}">{Status}...</a></i></b>'
     BAR =            '\n<b>├ </b>{Bar}'
-    PROCESS =        '\n<b>├ Process :</b> {Process}'
     PROCESSED =      '\n<b>├ Processed :</b> {Processed}'
-    TOTALSIZE =      '\n<b>├ Total Size :</b> {Totalsize}'
     ETA =            '\n<b>├ ETA :</b> {Eta}'
     SPEED =          '\n<b>├ Speed :</b> {Speed}'
     ELAPSED =        '\n<b>├ Elapsed :</b> {Elapsed}'
@@ -205,7 +205,6 @@ class LMTBStyle:
     STA_MODE =       '\n<b>├ Mode :</b> {Mode}'
     SL =             '\n<b>├ S/L :</b> {S}/{L}'
     
-
     ####--------SEEDING----------
     SEED_SIZE =      '\n<b>├ Size : </b>{Size}'
     SEED_SPEED =     '\n<b>├ Speed : </b> {Speed}'
