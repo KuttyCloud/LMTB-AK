@@ -204,16 +204,16 @@ class LMTBStyle:
     STATUS_NAME =       '<code>{Name}</code>'
 
     #####---------PROGRESSIVE STATUS-------
-    BAR =            '\n<b>┌ </b> {Bar}'
+    STATUS =         '\n<b>┌ <i><a href="{Url}">{Status}...</a></i></b>'
+    BAR =            '\n<b>├ </b> {Bar}'
     PROCESSED =      '\n<b>├ Processed:</b> {Processed}'
-    STATUS =         '\n<b>├ Status:</b> <a href="{Url}">{Status}</a>'
     ETA =            '\n<b>├ ETA:</b> {Eta}'
     SPEED =          '\n<b>├ Speed:</b> {Speed}'
     ELAPSED =        '\n<b>├ Elapsed:</b> {Elapsed}'
     ENGINE =         '\n<b>├ Engine:</b> {Engine}'
     STA_MODE =       '\n<b>├ Mode:</b> {Mode}'
     SEEDERS =        '\n<b>├ Seeders:</b> {Seeders} | '
-    LEECHERS =                                           '<b>Leechers:</b> {Leechers}'
+    LEECHERS =       '\n<b>├ Leechers:</b> {Leechers}'
 
     ####--------SEEDING----------
     SEED_SIZE =      '\n<b>├ Size: </b>{Size}'
