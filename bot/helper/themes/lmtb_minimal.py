@@ -204,9 +204,9 @@ class LMTBStyle:
     STATUS_NAME =       '<code>{Name}</code>'
 
     #####---------PROGRESSIVE STATUS-------
-    STATUS =         '\n<b>┌ <i><a href="{Url}">{Status}...</a></i></b>'
-    BAR =            '\n<b>├ </b> {Bar}'
+    BAR =            '\n<b>┌ </b> {Bar}'
     PROCESSED =      '\n<b>├ Processed:</b> {Processed}'
+    STATUS =         '\n<b>├ <i><a href="{Url}">{Status}...</a></i></b>'
     ETA =            '\n<b>├ ETA:</b> {Eta}'
     SPEED =          '\n<b>├ Speed:</b> {Speed}'
     ELAPSED =        '\n<b>├ Elapsed:</b> {Elapsed}'
