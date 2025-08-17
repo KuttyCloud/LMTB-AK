@@ -229,19 +229,19 @@ class LMTBStyle:
 
     ####--------OVERALL MSG FOOTER----------
     USER =           '\n<b>├ User:</b> <code>{User}</code> | '
-    ID =                                                        '<b>ID:</b> <code>{Id}</code>'
+    ID =             '\n<b>├ ID:</b> <code>{Id}</code>'
     BTSEL =          '\n<b>├ Select:</b> {Btsel}'
     CANCEL =         '\n<b>└ Cancel:</b> {Cancel}\n\n'
 
     ####------FOOTER--------
-    FOOTER =         '⌬ <b><i>Bot Stats</i></b>\n'
-    TASKS =          '\n<b>├Tasks:</b> {Tasks}\n'
-    BOT_TASKS =      '\n<b>├ Tasks:</b> {Tasks}/{Ttask} | <b>AVL:</b> {Free}\n'
-    Cpu =            '\n<b>├ CPU:</b> {cpu}% | '
-    FREE =           '<b>F:</b> {free} [{free_p}%]'
-    Ram =            '\n<b>├ RAM:</b> {ram}% | '
+    FOOTER =         '<b>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬</b>'
+    TASKS =          '\n<b>Tasks:</b> {Tasks}\n'
+    BOT_TASKS =      '\n<b>Tasks:</b> {Tasks}/{Ttask} | <b>AVL:</b> {Free}\n'
+    Cpu =            '\n<b>CPU:</b> {cpu}% | '
+    Ram =            '\n<b>RAM:</b> {ram}% | '
     uptime =         '<b>UPTIME:</b> {uptime}'
-    DL =             '\n<b>└ DL:</b> {DL}/s | '
+    FREE =           '<b>F:</b> {free} [{free_p}%]'
+    DL =             '\n<b>DL:</b> {DL}/s | '
     UL =             '<b>UL:</b> {UL}/s'
 
     ###--------BUTTONS-------
@@ -260,11 +260,11 @@ class LMTBStyle:
     # async def countNode(_, message): ----> gd_count.py
     COUNT_MSG = '<b>Counting:</b> <code>{LINK}</code>'
     COUNT_NAME = '<b><i>{COUNT_NAME}</i></b>\n┃\n'
-    COUNT_SIZE = '┠ <b>Size: </b>{COUNT_SIZE}\n'
-    COUNT_TYPE = '┠ <b>Type: </b>{COUNT_TYPE}\n'
-    COUNT_SUB =  '┠ <b>SubFolders: </b>{COUNT_SUB}\n'
-    COUNT_FILE = '┠ <b>Files: </b>{COUNT_FILE}\n'
-    COUNT_CC =   '┖ <b>By: </b>{COUNT_CC}\n'
+    COUNT_SIZE = '<b>├ Size: </b>{COUNT_SIZE}\n'
+    COUNT_TYPE = '<b>├ Type: </b>{COUNT_TYPE}\n'
+    COUNT_SUB =  '<b>├ SubFolders: </b>{COUNT_SUB}\n'
+    COUNT_FILE = '<b>├ Files: </b>{COUNT_FILE}\n'
+    COUNT_CC =   '<b>└ By: </b>{COUNT_CC}\n'
     # ---------------------
 
     # LIST ---> gd_list.py
@@ -290,49 +290,49 @@ class LMTBStyle:
     # ---------------------
 
     # USER Setting --> user_setting.py 
-    USER_SETTING = '''㊂ <b><u>User Settings :</u></b>
+    USER_SETTING = '''<b><u>User Settings :</u></b>
         
-┎<b> Name :</b> {NAME} ( <code>{ID}</code> )
-┠<b> Username :</b> {USERNAME}
-┠<b> Telegram DC :</b> {DC}
-┖<b> Language :</b> {LANG}
+<b>┌  Name :</b> {NAME} ( <code>{ID}</code> )
+<b>├  Username :</b> {USERNAME}
+<b>├  Telegram DC :</b> {DC}
+<b>└  Language :</b> {LANG}
 
 ➲ <u><b>Available Args:</b></u>
 • <b>-s</b> or <b>-set</b>: Set Directly via Arg'''
 
-    UNIVERSAL = '''㊂ <b><u>Universal Settings : {NAME}</u></b>
+    '''<b><u>Universal Settings : {NAME}</u></b>
+    
+<b>┌  Daily Tasks :</b> <code>{DT}</code> per day
+<b>├  YT-DLP Options :</b> <b><code>{YT}</code></b>
+<b>├  Last Bot Used :</b> <code>{LAST_USED}</code>
+<b>├  User Session :</b> <code>{USESS}</code>
+<b>├  MediaInfo Mode :</b> <code>{MEDIAINFO}</code>
+<b>├  Save Mode :</b> <code>{SAVE_MODE}</code>
+<b>└  User Bot PM :</b> <code>{BOT_PM}</code>'''
 
-┎<b> YT-DLP Options :</b> <b><code>{YT}</code></b>
-┠<b> Daily Tasks :</b> <code>{DT}</code> per day
-┠<b> Last Bot Used :</b> <code>{LAST_USED}</code>
-┠<b> User Session :</b> <code>{USESS}</code>
-┠<b> MediaInfo Mode :</b> <code>{MEDIAINFO}</code>
-┠<b> Save Mode :</b> <code>{SAVE_MODE}</code>
-┖<b> User Bot PM :</b> <code>{BOT_PM}</code>'''
+    MIRROR = '''<b><u>Mirror/Clone Settings : {NAME}</u></b>
 
-    MIRROR = '''㊂ <b><u>Mirror/Clone Settings : {NAME}</u></b>
+<b>┌  Daily Mirror :</b> <code>{DM} per day</code>
+<b>├  RClone Config :</b> <code>{RCLONE}</code>
+<b>├  Mirror Prefix :</b> <code>{MPREFIX}</code>
+<b>├  Mirror Suffix :</b> <code>{MSUFFIX}</code>
+<b>├  Mirror Remname :</b> <code>{MREMNAME}</code>
+<b>├  DDL Server(s) :</b> <code>{DDL_SERVER}</code>
+<b>├  User TD Mode :</b> <code>{TMODE}</code>
+<b>└  Total User TD(s) :</b> <code>{USERTD}</code>'''
 
-┎<b> RClone Config :</b> <i>{RCLONE}</i>
-┠<b> Mirror Prefix :</b> <code>{MPREFIX}</code>
-┠<b> Mirror Suffix :</b> <code>{MSUFFIX}</code>
-┠<b> Mirror Remname :</b> <code>{MREMNAME}</code>
-┠<b> DDL Server(s) :</b> <i>{DDL_SERVER}</i>
-┠<b> User TD Mode :</b> <i>{TMODE}</i>
-┠<b> Total User TD(s) :</b> <i>{USERTD}</i>
-┖<b> Daily Mirror :</b> <code>{DM}</code> per day'''
+    LEECH = '''<b><u>Leech Settings for {NAME}</u></b>
 
-    LEECH = '''㊂ <b><u>Leech Settings for {NAME}</u></b>
-
-┎<b> Daily Leech : </b><code>{DL}</code> per day
-┠<b> Leech Type :</b> <i>{LTYPE}</i>
-┠<b> Custom Thumbnail :</b> <i>{THUMB}</i>
-┠<b> Leech Split Size :</b> <code>{SPLIT_SIZE}</code>
-┠<b> Equal Splits :</b> <i>{EQUAL_SPLIT}</i>
-┠<b> Media Group :</b> <i>{MEDIA_GROUP}</i>
-┠<b> Leech Caption :</b> <code>{LCAPTION}</code>
-┠<b> Leech Prefix :</b> <code>{LPREFIX}</code>
-┠<b> Leech Suffix :</b> <code>{LSUFFIX}</code>
-┠<b> Leech Dumps :</b> <code>{LDUMP}</code>
-┠<b> Metadata :</b> <b><code>{METADATA}</code></b>
-┠<b> Attachment :</b> <code>{ATTACHMENT}</code>
-┖<b> Leech Remname :</b> <code>{LREMNAME}</code>'''
+<b>┌ Daily Leech : </b><code>{DL}</code> per day
+<b>├ Leech Type :</b> <i>{LTYPE}</i>
+<b>├ Custom Thumbnail :</b> <i>{THUMB}</i>
+<b>├ Leech Split Size :</b> <code>{SPLIT_SIZE}</code>
+<b>├ Equal Splits :</b> <i>{EQUAL_SPLIT}</i>
+<b>├ Media Group :</b> <i>{MEDIA_GROUP}</i>
+<b>├ Leech Caption :</b> <code>{LCAPTION}</code>
+<b>├ Leech Prefix :</b> <code>{LPREFIX}</code>
+<b>├ Leech Suffix :</b> <code>{LSUFFIX}</code>
+<b>├ Leech Dumps :</b> <code>{LDUMP}</code>
+<b>├ Metadata :</b> <b><code>{METADATA}</code></b>
+<b>├ Attachment :</b> <code>{ATTACHMENT}</code>
+<b>└ Leech Remname :</b> <code>{LREMNAME}</code>'''
