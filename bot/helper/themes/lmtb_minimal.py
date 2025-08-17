@@ -14,8 +14,8 @@ class LMTBStyle:
     LOGGED_PASSWORD = '''<b>Bot Already Logged In via Password</b>\n\n<i>No Need to Accept Temp Tokens.</i>'''
     ACTIVATE_BUTTON = 'Activate Temporary Token'
     TOKEN_MSG = '''<b><u>Generated Temporary Login Token!</u></b>
-<b>Temp Token:</b> <code>{token}</code>
-<b>Validity:</b> {validity}'''
+                   <b>Temp Token:</b> <code>{token}</code>
+                   <b>Validity:</b> {validity}'''
     # ---------------------
     # async def token_callback(_, query): ---> __main__.py
     ACTIVATED = '✅️ Activated ✅'
@@ -206,6 +206,7 @@ class LMTBStyle:
     #####---------PROGRESSIVE STATUS-------
     STATUS =         '\n<b>┌ <i><a href="{Url}">{Status}...</a></i></b>'
     BAR =            '\n<b>├ </b> {Bar}'
+    PROCESS =        '\n<b>├ Process :</b> {Process}'
     PROCESSED =      '\n<b>├ Processed:</b> {Processed}'
     ETA =            '\n<b>├ ETA:</b> {Eta}'
     SPEED =          '\n<b>├ Speed:</b> {Speed}'
